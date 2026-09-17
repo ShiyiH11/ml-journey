@@ -49,7 +49,7 @@ ml-journey/
 
 ```bash
 # 1. 克隆
-git clone https://github.com/<你的用户名>/ml-journey.git
+git clone https://github.com/ShiyiH11/ml-journey.git
 cd ml-journey
 
 # 2. 创建虚拟环境
@@ -201,6 +201,14 @@ X_test_scaled  = scaler.transform(X_test)        # ✅ 用同一套参数处理�
 plt.rcParams['font.sans-serif'] = ['SimHei', 'Microsoft YaHei']
 plt.rcParams['axes.unicode_minus'] = False
 ```
+
+---
+
+## 关于
+
+本科阶段的机器学习学习记录。每份代码都实际运行验证过，不留未跑通的示例。
+
+欢迎交流与指正 —— [@ShiyiH11](https://github.com/ShiyiH11)
 
 ---
 
