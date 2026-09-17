@@ -18,12 +18,13 @@
 
 ### 第 2 步：关联远程仓库
 
-创建后 GitHub 会显示一段命令。你只需要执行这两条（把 `你的用户名` 换成实际的）：
+远程地址已经配好了（`origin` → `https://github.com/ShiyiH11/ml-journey.git`）。
+如果要用别的地址，重新设一次：
 
 ```bash
 cd C:\Users\ASUS\WorkBuddy\2026-09-17-08-30-13\ml-journey
 
-git remote add origin https://github.com/你的用户名/ml-journey.git
+git remote set-url origin https://github.com/ShiyiH11/ml-journey.git
 git push -u origin main
 ```
 
@@ -33,6 +34,30 @@ git push -u origin main
 如果用的是 HTTPS，可能会让你输入用户名和密码 —— 密码要填 **Personal Access Token**，不是账号密码。
 
 > 获取 Token：GitHub → Settings → Developer settings → Personal access tokens → Tokens (classic) → Generate new token → 勾选 `repo` 权限
+
+---
+
+## 附：本仓库的提交身份
+
+本仓库的提交身份已配置为（**仅对本仓库生效**，不影响其他项目）：
+
+```
+user.name  = ShiyiH11
+user.email = ShiyiH11@users.noreply.github.com
+```
+
+用 `@users.noreply.github.com` 这种邮箱是为了**不暴露真实邮箱**——
+这是 GitHub 官方推荐的隐私做法。
+
+> ⚠️ 更准确的写法是 `数字ID+ShiyiH11@users.noreply.github.com`。
+> 去 GitHub → Settings → Emails → 勾选 "Keep my email addresses private"
+> 就能看到你自己的准确地址。如果想让提交头像正常显示，建议换成它：
+>
+> ```bash
+> git config user.email "你的准确noreply邮箱"
+> # 修改后需要重写历史提交的作者（本仓库提交很少，可以做）
+> ```
+
 
 ---
 
