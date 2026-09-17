@@ -1,0 +1,14 @@
+# 机器学习学习依赖
+# 安装： pip install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
+#
+# 版本已锁定 —— 保证任何机器上装出来结果一致，做研究必须这样
+
+numpy==2.5.3
+pandas==3.0.5
+matplotlib==3.11.2
+scikit-learn==1.9.1
+
+# ---- 以后要用深度学习时再取消注释 ----
+# 先别急，基础打牢再说
+# torch==2.12.0
+# torchvision==0.23.0
